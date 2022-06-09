@@ -100,27 +100,32 @@ $faqs = [
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital,wght@0,300;1,400&family=Montserrat:wght@300;400&family=Oswald:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
 
   <header>
-    <div class="up">
-      <div class="left">
+
+    <div class="up d-flex justify-content-between align-items-center">
+      <div class="left d-flex align-items-center">
         <img src="./img/logo.png" alt="logo">
-        <h3>PRIVACY E TERMINI</h3>
+        <h3>Privacy e Termini</h3>
       </div>
 
       <div class="right">
         <i class="fa-solid fa-braille"></i>
-        <img src="./img/profile.png" alt="profile">
+        
       </div>
 
     </div>
-    <div class="menu">
-      <ul>
+
+    <div class="menu d-flex align-items-center pt-4">
+      <ul class="d-flex">
         <li>Introduzione</li>
         <li>Norme sulla privacy</li>
         <li>Termini di servizio</li>
@@ -128,6 +133,7 @@ $faqs = [
         <li>Domande frequenti</li>
       </ul>
     </div>
+
   </header>
 
   <div class="text-container">
@@ -137,7 +143,7 @@ $faqs = [
           <?php echo $faq["title"]?>
         </h2>
         <div>
-        <?php echo $faq["body"]?>
+          <?php echo $faq["body"]?>
         </div>
       </div>
     <?php endforeach;?>
